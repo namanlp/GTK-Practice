@@ -22,7 +22,7 @@ activate (GtkApplication *app,
   g_signal_connect (button, "clicked", G_CALLBACK (print_hello), NULL);
   gtk_window_set_child (GTK_WINDOW (window), button);
 
-  gtk_window_present (GTK_WINDOW (window));
+  gtk_widget_show (window);
 }
 
 int
